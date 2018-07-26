@@ -62,22 +62,20 @@ class App extends Component {
       <div>
         <div className="wrapper">
           <div className="main">
-            <div className="container">
-              <div className="row">
-                <div className="col-xs-5 title-container">
-                  <Titles/>
-                </div>
-                <div className="col-xs-7 form-container">
-                  <Form getWeather={this.getWeather}/>
-                  <Weather
-                    temperature={this.state.temperature}
-                    city={this.state.city}
-                    country={this.state.country}
-                    humidity={this.state.temperature}
-                    description={this.state.description}
-                    error={this.state.error}
-                  />
-                </div>
+            <div className="row">
+              <div className="col-xs-5 title-container">
+                <Titles/>
+              </div>
+              <div className="col-xs-7 form-container">
+                <Form getWeather={this.getWeather}/>
+                <Weather
+                  temperature={this.state.temperature}
+                  city={this.state.city}
+                  country={this.state.country}
+                  humidity={this.state.temperature}
+                  description={this.state.description}
+                  error={this.state.error}
+                />
               </div>
             </div>
           </div>
